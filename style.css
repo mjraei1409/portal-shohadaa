@@ -1,0 +1,765 @@
+* {
+    transition: all 1s;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------Header--------------------------------------------------------------------------- */
+
+.header-parent-rspv {
+    display: none;
+}
+
+.header {
+    background-color: white;
+
+    backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+
+    height: 15vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh auto;
+    margin-bottom: 5vh;
+    border-radius: 25px;
+}
+
+.header-parent {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu {
+    align-content: center;
+    display: flex;
+}
+
+.menu-link {
+    margin: auto 2vw;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: all 1s;
+    /* font-size: clamp(16px, 16px, 20px); */
+}
+
+.menu-link:hover {
+    transform: scale(1.25);
+    transition: all 1s;
+}
+
+.search-box {
+    background-color: white;
+    display: flex;
+    margin: 3.5vh;
+    border-radius: 50px;
+}
+
+.icon-search-png {
+    width: 3vw;
+}
+
+#icon-search {
+    background: none;
+    border: 0;
+}
+
+#inpt {
+    direction: rtl;
+    border: 0;
+    color: white;
+    display: none;
+}
+
+.search-box:hover #inpt {
+    color: rgb(85, 85, 85);
+    display: block;
+    border-radius: 20px;
+}
+
+#inpt:focus-visible {
+    outline: none;
+    color: rgb(85, 85, 85);
+    display: block;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------          Footer          ------------------------------------------------------------------------------- */
+
+.footer {
+    background-color: rgb(18, 18, 18);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-in-footer {
+    height: 35vh;
+    width: 30vw;
+}
+
+.footer-right {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-shop-footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c {
+    height: 10vh;
+    display: flex;
+    align-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+#username {
+    width: 95%;
+    height: 5vh;
+    border: 0;
+    margin-top: 10px;
+}
+
+#password {
+    width: 95%;
+    height: 5vh;
+    border: 0;
+    margin-top: 10px;
+}
+
+#username:focus-visible {
+    outline: none;
+}
+
+#password:focus-visible {
+    outline: none;
+}
+
+#btn-submit-footer {
+    background-color: burlywood;
+    width: 95%;
+    height: 5vh;
+}
+
+.about-footer {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.h-text-footer {
+    color: white;
+    width: fit-content;
+    padding-right: 1vh;
+    border-right: 5px solid burlywood;
+}
+
+.text-footer {
+    color: white;
+}
+
+.c-text-footer {
+    color: white;
+    width: fit-content;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    border-right: 5px solid burlywood;
+    border-left: 5px solid burlywood;
+    box-shadow: 0px 1px 30px 0px burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------Slider---------------------------------------------------------------------------- */
+
+.slider-img {
+    height: 80vh;
+    width: 80vw;
+}
+
+.slider-dad {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider_container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.678);
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 20s cubic-bezier(0.165, 0.84, 0.44, 1) sliding infinite;
+}
+
+.slide1 {
+    height: 80vh;
+    width: 80vw;
+    background: rgb(182, 19, 109);
+}
+
+.slide2 {
+    height: 80vh;
+    width: 80vw;
+    background: rgb(255, 64, 64);
+}
+
+.slide3 {
+    height: 80vh;
+    width: 80vw;
+    background: rgb(11, 173, 188);
+}
+
+.slide4 {
+    height: 80vh;
+    width: 80vw;
+}
+
+.slide5 {
+    height: 80vh;
+    width: 80vw;
+}
+
+.next-btn {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: auto 0;
+    opacity: 0.5;
+}
+
+.prev-btn {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: auto 0;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------Content--------------------------------------------------------------------------- */
+
+.content {
+    margin-top: 2vh;
+}
+
+.content-1 {
+    color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-2 {
+    padding: 0 1vw;
+    padding-bottom: 1vh;
+    color: black;
+    margin: auto 2.5vw;
+}
+
+.content-3 {
+    padding: 0 1vw;
+    padding-bottom: 2vh;
+    color: black;
+    margin: auto 2.5vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.left-content-1 {
+    padding: 0 1vw;
+    width: 60vw;
+    margin: auto 2.5vw;
+}
+
+.right-content-1 {
+    width: 35vw;
+    border-radius: 50rem;
+    margin: 0 auto;
+}
+
+.h1-home {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.book {
+    width: 20vw;
+    transition: all 1s;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.book:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.img-book {
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0px 1px 10px 0px burlywood;
+}
+
+.btn-book {
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaid page---------------------------------------------------------------------------- */
+
+.img-sh-pg {
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.sh-img-pg {
+    width: 90vw;
+    height: 60vh;
+}
+
+.content-sh-pg-1 {
+    padding: 0 1vw;
+    padding-bottom: 1vh;
+    margin: auto 2.5vw;
+}
+
+.content-sh-pg-2 {
+    padding: 0 1vw;
+    padding-bottom: 1vh;
+    margin: auto 2.5vw;
+}
+
+.content-sh-pg-3 {
+    padding: 0 1vw;
+    padding-bottom: 1vh;
+    margin: auto 2.5vw;
+    margin-bottom: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------Shaids list---------------------------------------------------------------------------- */
+
+.horof {
+    margin: auto;
+}
+
+.harf {
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px burlywood;
+    display: grid;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.list-sh {
+    /* display: flex; */
+    width: 95vw;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+.inline-blok {
+    display: inline-block;
+    margin-bottom: -50vh;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------All page-----------------------------------------------------------------------------*/
+
+.shahid {
+    /* width: 8vw; */
+    display: inline-block;
+    transition: all 1s;
+}
+
+.shahid:hover {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.img-shahid-profile {
+    height: 20vh;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.box-h {
+    /* background-color: burlywood;
+    box-shadow: 0px 2px 50px 0px burlywood;
+    width: fit-content;
+    padding: 0 5vw;
+    border-top-left-radius: 0.75em; */
+
+    /* ----------------------------------------------------------------- */
+
+    border-right: 10px solid burlywood;
+    padding-right: 1vw;
+}
+
+.bg-shadow {
+    background-color: white;
+    box-shadow: 0px 2px 50px 0px burlywood;
+    padding: 5px;
+}
+
+.shadow {
+    box-shadow: 0px 2px 50px 0px burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(80vw);
+    }
+
+    30% {
+        transform: translateX(80vw);
+    }
+
+    40% {
+        transform: translateX(160vw);
+    }
+
+    50% {
+        transform: translateX(160vw);
+    }
+
+    60% {
+        transform: translateX(240vw);
+    }
+
+    70% {
+        transform: translateX(240vw);
+    }
+
+    80% {
+        transform: translateX(320vw);
+    }
+
+    90% {
+        transform: translateX(320vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* ----------------------------------        Header        ------------------------------- */
+
+    .header {
+        display: none;
+    }
+
+    .header-parent-rspv {
+        display: block;
+        background-color: white;
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 5vh;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        background-color: burlywood;
+        height: 60%;
+    }
+
+    .header-bottom {
+        height: 40%;
+        display: flex;
+    }
+
+    .search-input-rspv {
+        background-image: url(files/search-8924.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50px;
+        margin: 5px;
+        border: 0;
+        width: 10vw;
+        transition-property: none;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    .search-input-rspv:hover,.search-input-rspv:focus-visible {
+        transition-property: color;
+        background: white;
+        width: auto;
+        color: black;
+    }
+
+    .menu {
+        margin: auto;
+        width: fit-content;
+    }
+
+    /* ----------------------------------        Slider        ------------------------------- */
+
+    .slider-img {
+        height: 20vh;
+    }
+
+    .slider_container {
+        height: 20vh;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5 {
+        height: 20vh;
+    }
+
+    .next-btn,
+    .prev-btn {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    /* ----------------------------------        Content 1        ------------------------------- */
+
+    .content-1 {
+        display: block;
+    }
+
+    .left-content-1 {
+        width: auto;
+    }
+
+    .right-content-1 {
+        display: none;
+    }
+
+    .h1-home {
+        font-size: 3rem;
+    }
+
+    /* ----------------------------------        Content 2        ------------------------------- */
+    
+    .img-shahid-profile {
+        height: 15vh;
+    }
+
+    /* ----------------------------------        Content 3        ------------------------------- */
+
+    .book {
+        width: 40vw;
+        margin: auto 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-book {
+        width: 40vw;
+        height: 10vh;
+    }
+
+    /* ----------------------------------        Footer        ------------------------------- */
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-right {
+        display: block;
+        width: 95vw;
+    }
+
+    .sign-in-footer {
+        width: 95vw;
+        margin: auto;
+    }
+
+    .about-footer {
+        width: 100%;
+    }
+
+    .list-shop-footer {
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ----------------------------------        Shahid page        ------------------------------- */
+
+    .sh-img-pg {
+        width: 90vw;
+        height: 20vh;
+    }
+
+    .img-sh-pg {
+        width: 90vw;
+        height: 20vh;
+    }
+}
